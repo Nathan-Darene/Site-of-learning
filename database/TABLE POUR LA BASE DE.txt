@@ -1,0 +1,61 @@
+TABLE POUR LA BASE DE DONNÉE
+
+1. users
+id (INT, clé primaire, auto-incrément)
+nom (VARCHAR, nom de l'utilisateur)
+prenom (VARCHAR, prénom de l'utilisateur)
+telephone (VARCHAR, numéro de l'utilisateur)
+email (VARCHAR, adresse e-mail, unique)
+mot_de_passe (VARCHAR, mot de passe haché)
+
+1. admin
+id (INT, clé primaire, auto-incrément)
+email (VARCHAR, adresse e-mail, unique)
+mot_de_passe (VARCHAR, mot de passe haché)
+
+1. formateur
+id (INT, clé primaire, auto-incrément)
+nom (VARCHAR, nom de l'utilisateur)
+prenom (VARCHAR, prénom de l'utilisateur)
+telephone (VARCHAR, numéro de l'utilisateur)
+email (VARCHAR, adresse e-mail, unique)
+mot_de_passe (VARCHAR, mot de passe haché)
+
+
+2. Cours (Courses)
+id (INT, clé primaire, auto-incrément)
+titre (VARCHAR, titre du cours)
+description (TEXT, description du cours)
+date_creation (DATETIME, date de création du cours)
+id_formateur (INT, clé étrangère, référence à Users.id)
+
+
+3. Modules (Modules)
+id (INT, clé primaire, auto-incrément)
+titre (VARCHAR, titre du module)
+description (TEXT, description du module)
+id_cours (INT, clé étrangère, référence à Courses.id)
+
+
+
+5. Évaluations
+id (INT, clé primaire, auto-incrément)
+titre (VARCHAR, titre de l'évaluation)
+description (TEXT, description de l'évaluation)
+id_module (INT, clé étrangère, référence à Modules.id)
+
+
+6. Progression
+id (INT, clé primaire, auto-incrément)
+id_utilisateur (INT, clé étrangère, référence à Users.id)
+id_module (INT, clé étrangère, référence à Modules.id)
+pourcentage (FLOAT, pourcentage de progression dans le module)
+
+
+7. Certificats
+id (INT, clé primaire, auto-incrément)
+id_utilisateur (INT, clé étrangère, référence à Users.id)
+id_cours (INT, clé étrangère, référence à Courses.id)
+date_délivrance (DATETIME, date de délivrance du certificat)
+code_certificat (VARCHAR, code unique du certificat)
+

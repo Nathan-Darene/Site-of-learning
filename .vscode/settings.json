@@ -1,0 +1,16 @@
+{
+    "commentTranslate.targetLanguage": "fr",
+    "commentTranslate.multiLineMerge": false,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "database": "oral",
+            "name": "Postgresql",
+            "username": "nathan"
+        }
+    ]
+}
