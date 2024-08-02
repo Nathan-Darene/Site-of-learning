@@ -80,19 +80,19 @@
         </div>
         <div class="upcoming en-cour">
             <div class="progres-user events">
-                <div class="item">
+                <div class="item seance">
                     <div>
                         <i class='fa-solid fa-hourglass-half'></i>
                         <div class="event-info">
-                            <a href="#">Art Oratoire : Seance 1</a>
-                            <p>10:00-11:30</p>
+                            <a href="#" class="titre">Art Oratoire : Seance 1</a>
+                            <p>Seance du lundi</p>
+                            <p>Il reste 2 heures</p>
                             <p>Lieu: À ORAL</p>
                         </div>
                     </div>
                     <div>
                         <p>Terminé ?</p>
-                        <input type="checkbox" name="" id="" class="checkbox">
-                        <i class='bx bx-dots-horizontal-rounded'></i>
+                        <input type="checkbox" class="ui-checkbox">                        <i class='bx bx-dots-horizontal-rounded'></i>
                     </div>
                 </div>
             </div>

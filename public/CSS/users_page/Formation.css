@@ -309,6 +309,11 @@ body{
     font-weight: 600;
 }
 
+.bottom-container .prog-status .upcoming .events .item .event-info .titre{
+    font-size: 15px;
+    font-weight: 600;
+}
+
 .bottom-container .prog-status .header .tabs a.active{
     background: #fff;
 }
@@ -592,7 +597,7 @@ body{
 
     .bottom-container .popular,
     .bottom-container .upcoming{
-        width: 48%;
+        width: 100%;
     }
 
     .bottom-container .popular .audio a{
@@ -641,5 +646,22 @@ body{
     .bottom-container .upcoming{
         width: 100%;
     }
+
+    .bottom-container .upcoming .events .seance {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-container .prog-status .header,
+    .bottom-container .popular .header,
+    .bottom-container .upcoming .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-container .popular .header{
+        display: flex;
+        flex-direction: row;
+}
 
 }
