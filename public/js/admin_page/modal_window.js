@@ -1,5 +1,8 @@
+
 document.addEventListener("DOMContentLoaded", function() {
+    // Fonction pour initialiser une modal
     function setupModal(triggerId, modalId) {
+
         const trigger = document.getElementById(triggerId);
         const modal = document.getElementById(modalId);
         const closeBtn = modal.querySelector(".close");

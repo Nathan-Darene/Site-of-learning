@@ -2,11 +2,9 @@
 <div id="add-formateur" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <center>
-            <h2 class="h2">Ajouter un formateur</h2>
-        </center>
-        <div id="delete-user-list">
-            <div class="delete-user-lists">
+        <center><h2 class="titre_">Ajouter un formateur</h2></center>
+        <div id="Add-formateur-list">
+            <div class="Add-user-lists">
                 {{-- @foreach (\App\Models\Users::inRandomOrder() /*->take(6)*/->get() as $user) --}}
                     <div class="user delete-user">
                         {{-- @if ($user->imageUpload) --}}

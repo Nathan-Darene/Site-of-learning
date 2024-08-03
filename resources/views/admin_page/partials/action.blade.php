@@ -17,7 +17,6 @@
     </div>
 </div>
 
-
 {{-- Bouton d'ajout d'un utilisateur ou client --}}
 <div class="notification add-reminder" id="users-add">
     <div>

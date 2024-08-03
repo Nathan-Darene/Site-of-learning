@@ -613,7 +613,7 @@ main .recent-orders a{
     @keyframes showMenu {
        to{
         left: 0;
-       } 
+       }
     }
 
     aside .logo{
@@ -703,6 +703,10 @@ main .recent-orders a{
 
     .right-section .nav button span{
         font-size: 2rem;
+    }
+
+    .modal .modal-content {
+        margin: 100px;
     }
 
 }
