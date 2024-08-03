@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/admin.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/modal_windows.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('CSS/admin_page/cours.css') }}"> --}}
     <title>@yield('title', 'Responsive Dashboard')</title>
 </head>
 

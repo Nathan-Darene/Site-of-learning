@@ -1,5 +1,5 @@
 /* Reset de base pour harmoniser l'apparence entre les navigateurs */
-* {
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
+*/
 .container {
     max-width: 600px;
     margin: 30px auto;
@@ -21,11 +21,11 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+/*h2 {
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
-}
+}*/
 
 .form-group {
     margin-bottom: 15px;

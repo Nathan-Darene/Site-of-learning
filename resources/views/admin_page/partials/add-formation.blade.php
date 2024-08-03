@@ -7,7 +7,7 @@
         </center>
         <div id="add-formation-list">
             <div class="add-formation-list">
-                
+                @include('admin_page.page.champs-add-formation')
             </div>
         </div>
     </div>
