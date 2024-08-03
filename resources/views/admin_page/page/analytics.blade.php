@@ -1,15 +1,15 @@
 @extends('admin_page.layouts.app')
 
-@section('title', 'Analytics')
+@section('title', 'Analytique')
 
 @section('contents')
-    <h1>Analytics</h1>
+    <h1>Analytique</h1>
     <div class="analyse">
         <div class="sales">
             <div class="status">
                 <div class="info">
-                    <h3>Total Sales</h3>
-                    <h1>$65,024</h1>
+                    <h3>Ventes Totales</h3>
+                    <h1>65 024 $</h1>
                 </div>
                 <div class="progresss">
                     <svg>
@@ -24,8 +24,8 @@
         <div class="visits">
             <div class="status">
                 <div class="info">
-                    <h3>Site Visit</h3>
-                    <h1>24,981</h1>
+                    <h3>Visites du Site</h3>
+                    <h1>24 981</h1>
                 </div>
                 <div class="progresss">
                     <svg>
@@ -40,8 +40,8 @@
         <div class="searches">
             <div class="status">
                 <div class="info">
-                    <h3>Searches</h3>
-                    <h1>14,147</h1>
+                    <h3>Recherches</h3>
+                    <h1>14 147</h1>
                 </div>
                 <div class="progresss">
                     <svg>
@@ -56,45 +56,45 @@
     </div>
 
     <div class="new-users">
-        <h2>New Users</h2>
+        <h2>Nouveaux Utilisateurs</h2>
         <div class="user-list">
             <div class="user">
                 <img src="{{ asset('images/profile-2.jpg') }}">
                 <h2>Jack</h2>
-                <p>54 Min Ago</p>
+                <p>Il y a 54 minutes</p>
             </div>
             <div class="user">
                 <img src="{{ asset('images/profile-3.jpg') }}">
                 <h2>Amir</h2>
-                <p>3 Hours Ago</p>
+                <p>Il y a 3 heures</p>
             </div>
             <div class="user">
                 <img src="{{ asset('images/profile-4.jpg') }}">
                 <h2>Ember</h2>
-                <p>6 Hours Ago</p>
+                <p>Il y a 6 heures</p>
             </div>
             <div class="user">
                 <img src="{{ asset('images/plus.png') }}">
-                <h2>More</h2>
-                <p>New User</p>
+                <h2>Plus</h2>
+                <p>Nouvel Utilisateur</p>
             </div>
         </div>
     </div>
 
     <div class="recent-orders">
-        <h2>Recent Orders</h2>
+        <h2>Commandes Récentes</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Course Name</th>
-                    <th>Course Number</th>
-                    <th>Payment</th>
-                    <th>Status</th>
+                    <th>Nom du Cours</th>
+                    <th>Numéro du Cours</th>
+                    <th>Paiement</th>
+                    <th>Statut</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
-        <a href="#">Show All</a>
+        <a href="#">Voir Tout</a>
     </div>
 @endsection

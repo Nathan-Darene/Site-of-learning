@@ -22,8 +22,7 @@
     <div class="user-profile">
         <div class="logo">
             <img src="{{ asset('images/logo.png') }}">
-            <h2>ORAL</h2>
-            <p>Fullstack Web Developer</p>
+            <h2>O<span class="danger">RAL</span></h2>
         </div>
     </div>
 
@@ -59,11 +58,9 @@
             </div>
         </div>
 
-        <div class="notification add-reminder">
-            <div>
-                <span class="material-icons-sharp">add</span>
-                <h3>Add Reminder</h3>
-            </div>
-        </div>
+        {{-- Section Control --}}
+
+        @include('admin_page.partials.reminder')
+
     </div>
 </div>

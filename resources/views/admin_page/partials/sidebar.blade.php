@@ -1,7 +1,7 @@
 <aside>
     <div class="toggle">
         <div class="logo">
-            <img src="{{ asset('images/logo.png') }}">
+            {{-- <img src="{{ asset('images/logo.png') }}"> --}}
             <h2>O<span class="danger">RAL</span></h2>
         </div>
         <div class="close" id="close-btn">
@@ -10,7 +10,7 @@
     </div>
 
     <div class="sidebar">
-        <a href="#">
+        <a href="#" class="active">
             <span class="material-icons-sharp">dashboard</span>
             <h3>Dashboard</h3>
         </a>
@@ -22,7 +22,7 @@
             <span class="material-icons-sharp">receipt_long</span>
             <h3>History</h3>
         </a>
-        <a href="#" class="active">
+        <a href="#">
             <span class="material-icons-sharp">insights</span>
             <h3>Analytics</h3>
         </a>
