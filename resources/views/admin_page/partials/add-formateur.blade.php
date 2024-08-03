@@ -1,5 +1,5 @@
 <!-- Balise div pour la fenêtre modale -->
-<div id="fromateur-add" class="modal">
+<div id="add-formateur" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
         <center>

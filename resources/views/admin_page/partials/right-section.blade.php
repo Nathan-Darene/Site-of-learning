@@ -60,7 +60,7 @@
 
         {{-- Section Control --}}
 
-        @include('admin_page.partials.reminder')
+        @include('admin_page.partials.action')
 
     </div>
 </div>

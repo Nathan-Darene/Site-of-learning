@@ -18,9 +18,8 @@
             @yield('contents')
         </main>
 
-        @include('admin_page.partials.right-section')
-        @include('admin_page.partials.add-formateur')
-        @include('admin_page.partials.delete-formateur')
+        @include('admin_page.layouts.@include')
+
     </div>
 
     <script src="{{ asset('js/admin_page/orders.js') }}"></script>

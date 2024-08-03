@@ -1,5 +1,5 @@
 <!-- Balise div pour la fenêtre modale de supression d'un formatuer -->
-<div id="del-formateur" class="modal">
+<div id="del-formation" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
         <center>
