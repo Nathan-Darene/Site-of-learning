@@ -3,7 +3,7 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <center>
-            <h2 class="h2">Suprimer un formateur</h2>
+            <h2 class="h2">Suprimer une formation</h2>
         </center>
         <div id="delete-user-list">
             <div class="delete-user-lists">

@@ -3,6 +3,6 @@
 @include('admin_page.partials.delete-formateur')
 @include('admin_page.partials.add-formation')
 @include('admin_page.partials.delete-formation')
-{{-- @include('admin_page.partials.add-user') --}}
-{{-- @include('admin_page.partials.delete-user') --}}
+@include('admin_page.partials.add-users')
+@include('admin_page.partials.delete-users')
 {{--  --}}
