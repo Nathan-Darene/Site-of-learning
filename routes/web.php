@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AllController;
 use App\Http\Controllers\AddController;
 
 
@@ -30,9 +29,9 @@ Route::get('page_admin', function () {
     return view('admin_page.page.analytics');
 });
 
-Route::get('/creates', [AllController::class, 'creates']);
-Route::get('/create', [AllController::class, 'create'])->name('courses.create');
-// Route::post('/courses', [AllController::class, 'store'])->name('courses.store');
 
+// Route pour l'ajout de formation
 Route::post('/formation', [AddController::class, 'store'])->name('formations.store');
-Route::get('/formation', [AddController::class, 'create'])->name('formations.create');
+
+// Route pour l'ajout de formateur
+Route::post('/formateur', [AddController::class, 'addformateur' ])->name('add.formateur');

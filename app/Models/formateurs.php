@@ -16,6 +16,7 @@ class formateurs extends Model
         'prenom',
         'telephone',
         'email',
+        'formation_disponse',
         'mot_de_passe',
     ];
 

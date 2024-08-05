@@ -8,16 +8,8 @@ use Illuminate\Http\Request;
 
 class AddController extends Controller
 {
-    public function create()
-{
-    // Récupérer les données nécessaires pour la vue, si nécessaire
-    $formateurs = formateurs::all();
 
-    // Retourner la vue de création avec les données nécessaires
-    return view('admin_page.page.champs-add-formation', compact('formateurs'));
-}
-
-
+    // Ajout d'une formation
     public function store(Request $request)
     {
 
@@ -36,7 +28,29 @@ class AddController extends Controller
         // Enregistrement des données
         courses::create($validatedData);
 
-        // Redirection ou autre action
+        // Redirection
         return redirect()->back()->with('success', 'Formation ajoutée avec succès!');
     }
+
+    //Ajout d'un formateur
+
+    public function addformateur(Request $request)
+    {
+        // Validation des données
+        $validatedData = $request->validate([
+            'nom' => 'required|string|max:255',
+            'prenom' => 'required|string|max:255',
+            'telephone' => 'required|string|max:20',
+            'email' => 'required|string|email|max:255|unique:formateurs,email',
+            'mot_de_passe' => 'required|string|min:8|unique:formateurs,email',
+            'formation_disponse' => 'required|string|max:255',
+        ]);
+        // Enregistrement des données
+        formateurs::create($validatedData);
+
+        // Redirection
+        return redirect()->back()->with('success', 'Formateur ajouté avec succès!');
+    }
+
+    
 }
