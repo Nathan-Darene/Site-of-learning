@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AllController;
+use App\Http\Controllers\AddController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -29,4 +32,7 @@ Route::get('page_admin', function () {
 
 Route::get('/creates', [AllController::class, 'creates']);
 Route::get('/create', [AllController::class, 'create'])->name('courses.create');
-Route::post('/courses', [AllController::class, 'store'])->name('courses.store');
+// Route::post('/courses', [AllController::class, 'store'])->name('courses.store');
+
+Route::post('/formation', [AddController::class, 'store'])->name('formations.store');
+Route::get('/formation', [AddController::class, 'create'])->name('formations.create');

@@ -14,6 +14,7 @@ class courses extends Model
     protected $fillable = [
         'titre',
         'description',
+        'seance',
         'duree',
         'lieu',
         'date_debut',
@@ -24,7 +25,7 @@ class courses extends Model
     // Relation: un cours appartient à un formateur
     public function formateur()
     {
-        return $this->belongsTo(Formateur::class, 'id_formateur');
+        return $this->belongsTo(formateurs::class, 'id_formateur');
     }
 
     // Relation: un cours peut avoir plusieurs modules

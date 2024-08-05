@@ -5,14 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class formateur extends Model
+class formateurs extends Model
 {
     use HasFactory;
 
-    protected $table = 'formateur';
+    protected $table = 'formateurs';
 
     protected $fillable = [
-        'nom', 'prenom', 'telephone', 'email', 'mot_de_passe',
+        'nom',
+        'prenom',
+        'telephone',
+        'email',
+        'mot_de_passe',
     ];
 
     protected $hidden = [

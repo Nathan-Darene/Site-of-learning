@@ -1,0 +1,166 @@
+/* Styles pour le conteneur principal */
+.containers {
+    align-items: center;
+    max-width: 800px;
+    margin-top:20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Styles pour les messages d'erreur */
+.alert.alert-danger {
+    color: #d9534f;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert.alert-danger ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Styles pour les groupes de formulaires */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Styles pour les étiquettes de formulaire */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Styles pour les champs de saisie et les textarea */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Styles pour les boutons */
+
+/* From Uiverse.io by vinodjangid07 */
+.Download-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 12px 20px;
+  color: white;
+  background: rgb(103, 92, 156);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.Download-button svg {
+  margin-right: 8px;
+  width: 25px;
+}
+
+.Download-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.Download-button:active {
+  box-shadow: 0 0.3em 1em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.Download-button::before {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.Download-button::after {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  right: 0;
+  transition: all 0.2s;
+}
+
+.Download-button:hover::before,
+.Download-button:hover::after {
+  height: 60%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Styles spécifiques pour le textarea */
+.form-control#description {
+    height: 100px; /* Hauteur par défaut */
+    min-height: 60px; /* Hauteur minimale */
+    resize: vertical; /* Permet de redimensionner verticalement */
+}
+
+.containers .form-group .title,
+.containers .form-group .description,
+.containers .form-group .duree,
+.containers .form-group .lieu,
+.containers .form-group .date_debut,
+.containers .form-group .date_fin,
+.containers .form-group .id_formateur {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.containers .form-group input,
+.containers .form-group select,
+.containers .form-group textarea {
+    border: 2px solid transparent;
+    /* width: 15em; */
+    /* height: 2.5em; */
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.containers .form-group  input:hover,
+.containers .form-group  input:focus ,
+.containers .form-group  textarea:hover,
+.containers .form-group  textarea:focus,
+.containers .form-group  select:hover,
+.containers .form-group  select:focus
+{
+  border: 2px solid #4a9dec;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}

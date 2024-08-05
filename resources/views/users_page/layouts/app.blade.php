@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/fontawesome-6.5.1-beta3/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/users_page/Formation.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/users_page/swiper-bundle.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/users_page/boxicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/users_page/progres.css') }}">
 
     <title>@yield('title')</title>
@@ -27,9 +29,11 @@
     </div>
 
     <script src="{{ asset('https://cdn.jsdelivr.net/npm/chart.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ asset('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js')}}"></script>
     <script src="{{ asset('js/user_page/Formation.js') }}"></script>
     <script src="{{ asset('js/user_page/date.js') }}"></script>
+    <script src="{{ asset('js/user_page/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('js/user_page/chart.js') }}"></script>
 </body>
 
 </html>

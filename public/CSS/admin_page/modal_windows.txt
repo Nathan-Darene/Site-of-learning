@@ -9,12 +9,7 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(
-        0,
-        0,
-        0,
-        0.4
-    ); /* Fond semi-transparent pour l'ombrag*/
+    background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent pour l'ombrag*/
 }
 
 /* Styles pour le contenu de la fenêtre modale */
@@ -45,22 +40,23 @@
     text-decoration: none;
 }
 
-.modal .modal-content .titre_ {
+.modal .modal-content .titre_{
     font-size: 20px;
     font-weight: 600;
 }
 
-.fa-trash-can {
+.fa-trash-can{
     color: rgb(0, 0, 0);
     font-size: 18px;
     margin-right: 50px;
     cursor: pointer;
     transition: 0.3s;
+
+
 }
 
-.modal .modal-content .fa-trash-can:hover {
+.modal .modal-content .fa-trash-can:hover{
     color: red;
     transform: scale(1.3);
     transition: 0.3s;
 }
-
