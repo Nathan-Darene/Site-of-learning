@@ -5,50 +5,50 @@
             <h2>O<span class="danger">RAL</span></h2>
         </div>
         <div class="close" id="close-btn">
-            <span class="material-icons-sharp">close</span>
+            <span class="material-icons-sharp icon-translate-no">close</span>
         </div>
     </div>
 
     <div class="sidebar">
         <a href="#" class="active">
-            <span class="material-icons-sharp">dashboard</span>
+            <span class="material-icons-sharp icon-translate-no">dashboard</span>
             <h3>Dashboard</h3>
         </a>
         <a href="#">
-            <span class="material-icons-sharp">person_outline</span>
+            <span class="material-icons-sharp icon-translate-no">person_outline</span>
             <h3>Users</h3>
         </a>
         <a href="#">
-            <span class="material-icons-sharp">receipt_long</span>
+            <span class="material-icons-sharp icon-translate-no">receipt_long</span>
             <h3>History</h3>
         </a>
         <a href="#">
-            <span class="material-icons-sharp">insights</span>
+            <span class="material-icons-sharp icon-translate-no">insights</span>
             <h3>Analytics</h3>
         </a>
         <a href="#">
-            <span class="material-icons-sharp">mail_outline</span>
+            <span class="material-icons-sharp icon-translate-no">mail_outline</span>
             <h3>Tickets</h3>
             <span class="message-count">27</span>
         </a>
         <a href="#">
-            <span class="material-icons-sharp">inventory</span>
+            <span class="material-icons-sharp icon-translate-no">inventory</span>
             <h3>Sale List</h3>
         </a>
         <a href="#">
-            <span class="material-icons-sharp">report_gmailerrorred</span>
+            <span class="material-icons-sharp icon-translate-no">report_gmailerrorred</span>
             <h3>Reports</h3>
         </a>
         <a href="#">
-            <span class="material-icons-sharp">settings</span>
+            <span class="material-icons-sharp icon-translate-no">settings</span>
             <h3>Settings</h3>
         </a>
         <a href="#">
-            <span class="material-icons-sharp">add</span>
+            <span class="material-icons-sharp icon-translate-no">add</span>
             <h3>New Login</h3>
         </a>
         <a href="#">
-            <span class="material-icons-sharp">logout</span>
+            <span class="material-icons-sharp icon-translate-no">logout</span>
             <h3>Logout</h3>
         </a>
     </div>

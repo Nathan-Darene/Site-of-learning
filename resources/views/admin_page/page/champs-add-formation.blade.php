@@ -51,7 +51,7 @@
             <label for="id_formateur" class="id_formateur">Formateur:</label>
             <select id="id_formateur" name="id_formateur" class="form-control" required>
                 {{-- @if (isset($formateurs) && (is_array($formateurs) || is_object($formateurs))) --}}
-                @foreach (\App\Models\formateurs::inRandomOrder()->take(6)->get() as $formateur)
+                @foreach (\App\Models\formateurs::all() as $formateur)
                     <option value="{{ $formateur->id }}">{{ $formateur->nom }} {{ $formateur->prenom }}</option>
                 @endforeach
                 {{-- @endif --}}

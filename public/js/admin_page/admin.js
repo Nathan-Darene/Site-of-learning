@@ -22,6 +22,7 @@ darkMode.addEventListener('click', () => {
 Orders.forEach(order => {
     const tr = document.createElement('tr');
     const trContent = `
+        <td>${order.userName}</td>
         <td>${order.productName}</td>
         <td>${order.productNumber}</td>
         <td>${order.paymentStatus}</td>

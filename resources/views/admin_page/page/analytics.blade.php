@@ -86,14 +86,39 @@
         <table>
             <thead>
                 <tr>
+                    <th>Nom du Client</th>
                     <th>Nom du Cours</th>
                     <th>Numéro du Cours</th>
                     <th>Paiement</th>
                     <th>Statut</th>
-                    <th></th>
+                    <th>Détails</th>
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>Python pour les Nuls</td>
+                    <td>C001</td>
+                    <td>$250</td>
+                    <td>Payé</td>
+                    <td><a href="#"><i class="fas fa-ellipsis"></i></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Java pour les Nuls</td>
+                    <td>C002</td>
+                    <td>$350</td>
+                    <td>En Attente</td>
+                    <td><a href="#"><i class="fas fa-ellipsis"></i></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>JavaScript pour les Nuls</td>
+                    <td>C003</td>
+                    <td>$450</td>
+                    <td>Payé</td>
+                    <td><a href="#"><i class="fas fa-ellipsis"></i></a></td>
+            </tbody>
         </table>
         <a href="#">Voir Tout</a>
     </div>

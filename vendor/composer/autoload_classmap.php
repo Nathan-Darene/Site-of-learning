@@ -8,7 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
-    'App\\Http\\Controllers\\AllController' => $baseDir . '/app/Http/Controllers/AllController.php',
+    'App\\Http\\Controllers\\AddController' => $baseDir . '/app/Http/Controllers/AddController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
@@ -25,7 +25,8 @@ return array(
     'App\\Models\\certificats' => $baseDir . '/app/Models/certificats.php',
     'App\\Models\\courses' => $baseDir . '/app/Models/courses.php',
     'App\\Models\\evaluations' => $baseDir . '/app/Models/evaluations.php',
-    'App\\Models\\formateur' => $baseDir . '/app/Models/formateur.php',
+    'App\\Models\\formateurs' => $baseDir . '/app/Models/formateurs.php',
+    'App\\Models\\formations' => $baseDir . '/app/Models/formations.php',
     'App\\Models\\modules' => $baseDir . '/app/Models/modules.php',
     'App\\Models\\progression' => $baseDir . '/app/Models/progression.php',
     'App\\Models\\users' => $baseDir . '/app/Models/users.php',

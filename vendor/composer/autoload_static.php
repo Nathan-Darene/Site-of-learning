@@ -528,7 +528,7 @@ class ComposerStaticInitfe33f98a750b8c5a51b30c78bd3fab21
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'App\\Http\\Controllers\\AllController' => __DIR__ . '/../..' . '/app/Http/Controllers/AllController.php',
+        'App\\Http\\Controllers\\AddController' => __DIR__ . '/../..' . '/app/Http/Controllers/AddController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -545,7 +545,8 @@ class ComposerStaticInitfe33f98a750b8c5a51b30c78bd3fab21
         'App\\Models\\certificats' => __DIR__ . '/../..' . '/app/Models/certificats.php',
         'App\\Models\\courses' => __DIR__ . '/../..' . '/app/Models/courses.php',
         'App\\Models\\evaluations' => __DIR__ . '/../..' . '/app/Models/evaluations.php',
-        'App\\Models\\formateur' => __DIR__ . '/../..' . '/app/Models/formateur.php',
+        'App\\Models\\formateurs' => __DIR__ . '/../..' . '/app/Models/formateurs.php',
+        'App\\Models\\formations' => __DIR__ . '/../..' . '/app/Models/formations.php',
         'App\\Models\\modules' => __DIR__ . '/../..' . '/app/Models/modules.php',
         'App\\Models\\progression' => __DIR__ . '/../..' . '/app/Models/progression.php',
         'App\\Models\\users' => __DIR__ . '/../..' . '/app/Models/users.php',

@@ -29,6 +29,7 @@
     <script src="{{ asset('js/admin_page/admin.js') }}"></script>
     <script src="{{ asset('js/admin_page/active.js') }}"></script>
     <script src="{{ asset('js/admin_page/modal_window.js') }}"></script>
+    <script src="{{ asset('js/admin_page/no-translate.js') }}"></script>
 </body>
 
 </html>
