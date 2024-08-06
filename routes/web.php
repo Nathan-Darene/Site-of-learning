@@ -2,8 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AddController;
-
-
+use App\Http\Controllers\DeleteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +34,13 @@ Route::post('/formation', [AddController::class, 'store'])->name('formations.sto
 
 // Route pour l'ajout de formateur
 Route::post('/formateur', [AddController::class, 'addformateur' ])->name('add.formateur');
+
+
+/*Route pour la Supression de formateur*/
+// Route::get('/formateurs/deletes', [DeleteController::class, 'index'])->name('formateurs.index');
+Route::get('/formateurs/delete', [DeleteController::class, 'index'])->name('formateurs.index');
+
+// Pour une méthode de suppression avec un ID
+Route::delete('/formateur/delete', [DeleteController::class, 'deleteFormateur'])->name('delete.formateur');
+
+

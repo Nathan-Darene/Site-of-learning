@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="{{ asset('assets/fontawesome-free-6.5.1-web/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/admin.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/modal_windows.css') }}">
-    <link rel="stylesheet" href="{{ asset('CSS/admin_page/add-formation.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/admin_page/add.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/admin_page/delete.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/admin_page/checklist.css') }}">
     <title>@yield('title', 'Responsive Dashboard')</title>
 </head>
 

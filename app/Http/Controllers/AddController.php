@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\courses;
 use App\Models\formateurs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+
 
 class AddController extends Controller
 {
@@ -33,7 +35,6 @@ class AddController extends Controller
     }
 
     //Ajout d'un formateur
-
     public function addformateur(Request $request)
     {
         // Validation des données
@@ -42,9 +43,13 @@ class AddController extends Controller
             'prenom' => 'required|string|max:255',
             'telephone' => 'required|string|max:20',
             'email' => 'required|string|email|max:255|unique:formateurs,email',
-            'mot_de_passe' => 'required|string|min:8|unique:formateurs,email',
+            'mot_de_passe' => 'required|string|min:8',
             'formation_disponse' => 'required|string|max:255',
         ]);
+
+        // Hachage du mot de passe
+        $validatedData['mot_de_passe'] = Hash::make($validatedData['mot_de_passe']);
+
         // Enregistrement des données
         formateurs::create($validatedData);
 
@@ -52,5 +57,6 @@ class AddController extends Controller
         return redirect()->back()->with('success', 'Formateur ajouté avec succès!');
     }
 
-    
+
+
 }

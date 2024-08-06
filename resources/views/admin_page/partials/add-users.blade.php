@@ -5,7 +5,7 @@
         <center><h2 class="h2">Ajouter un utilisateur</h2></center>
         <div id="add-user-list">
             <div class="add-user-lists">
-
+                @include('admin_page.page.champs-add-user')
             </div>
         </div>
     </div>
