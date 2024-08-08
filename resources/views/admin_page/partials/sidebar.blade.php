@@ -1,4 +1,10 @@
 <aside>
+    @php
+        $nbr_cours = App\Models\Cours::count();
+        $nbr_users = App\Models\users::count();
+        $nbr_formations = App\Models\formations::count();
+        $nbr_formateur = App\Models\formateurs::count();
+    @endphp
     <div class="toggle">
         <div class="logo">
             {{-- <img src="{{ asset('images/logo.png') }}"> --}}
@@ -16,7 +22,13 @@
         </a>
         <a href="#">
             <span class="material-icons-sharp icon-translate-no">person_outline</span>
-            <h3>Users</h3>
+            <h3>Utilisateur</h3>
+            <span class="message-count">{{$nbr_users}}</span>
+        </a>
+        <a href="#">
+            <span class="material-icons-sharp icon-translate-no"><i class="fas fa-user-graduate"></i></span>
+            <h3>Formateur</h3>
+            <span class="message-count">{{$nbr_formateur}}</span>
         </a>
         <a href="#">
             <span class="material-icons-sharp icon-translate-no">receipt_long</span>

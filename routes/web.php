@@ -32,6 +32,9 @@ Route::get('page_admin', function () {
 // Route pour l'ajout de formation
 Route::post('/formation', [AddController::class, 'store'])->name('formations.store');
 
+// Route pour l'ajout d'utilisateur
+Route::post('/user', [AddController::class, 'adduser' ])->name('add.user');
+
 // Route pour l'ajout de formateur
 Route::post('/formateur', [AddController::class, 'addformateur' ])->name('add.formateur');
 

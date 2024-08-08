@@ -43,8 +43,8 @@
 
         <div class="form-group">
             {{-- <i class="fas fa-book icons"></i> --}}
-            <input type="text" id="Formation_dispanse" name="Formation_dispanse" class="form-control" placeholder="Formation dispensée" required
-                value="{{ old('Formation_dispanse') }}">
+            <input type="text" id="formation_disponse" name="formation_disponse" class="form-control" placeholder="Formation dispensée" required
+                value="{{ old('formation_disponse') }}">
         </div>
         <center>
             <button type="submit" class="Download-button">

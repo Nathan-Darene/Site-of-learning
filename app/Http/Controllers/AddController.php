@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\courses;
+use App\Models\cours;
+use App\Models\users;
 use App\Models\formateurs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -28,7 +29,7 @@ class AddController extends Controller
         ]);
 
         // Enregistrement des données
-        courses::create($validatedData);
+        cours::create($validatedData);
 
         // Redirection
         return redirect()->back()->with('success', 'Formation ajoutée avec succès!');
@@ -56,6 +57,28 @@ class AddController extends Controller
         // Redirection
         return redirect()->back()->with('success', 'Formateur ajouté avec succès!');
     }
+
+    //Ajout d'un utilisateur
+    public function adduser(Request $request){
+        // Validation des données
+        $validatedData = $request->validate([
+            'nom' => 'required|string|max:255',
+            'prenom' => 'required|string|max:255',
+            'telephone' => 'required|string|max:20',
+            'email' => 'required|string|email|max:255|unique:users,email',
+            'mot_de_passe' => 'required|string|min:6',
+        ]);
+
+        // Hachage du mot de passe
+        $validatedData['mot_de_passe'] = Hash::make($validatedData['mot_de_passe']);
+
+        // Enregistrement des données
+        users::create($validatedData);
+
+        // Redirection
+        return redirect()->back()->with('success', 'Utilisateur ajouté avec succès!');
+    }
+
 
 
 

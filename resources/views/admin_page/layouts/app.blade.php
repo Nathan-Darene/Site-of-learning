@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/add.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/delete.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/checklist.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/admin_page/background.css') }}">
+
     <title>@yield('title', 'Responsive Dashboard')</title>
 </head>
 
-<body>
+<body class="bodys dark-mode-variables">
     <div class="container">
         @include('admin_page.partials.sidebar')
 

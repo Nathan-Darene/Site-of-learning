@@ -9,15 +9,15 @@
         </div>
     @endif
 
-    <form action="{{ route('delete.formation') }}" method="POST">
+    <form action="" method="POST">
         @csrf
         @method('DELETE')
         <div class="form-group">
             <div id="checklist">
-                @foreach (\App\Models\courses::all() as $formateur)
-                    <input value="{{ $formateur->id }}" name="formateur_ids[]" type="checkbox" id="{{ $formateur->id }}">
-                    <label class="label" for="{{ $formateur->id }}">{{ $formateur->nom }}
-                        {{ $formateur->prenom }}</label>
+                @foreach (\App\Models\Cours::all() as $formation)
+                    <input value="{{ $formation->id }}" name="formateur_ids[]" type="checkbox" id="{{ $formation->id }}">
+                    <label class="label" for="{{ $formation->id }}">{{ $formation->titre }}
+                        {{ $formation->prenom }}</label>
                 @endforeach
 
             </div>

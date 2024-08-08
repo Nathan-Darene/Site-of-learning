@@ -14,12 +14,11 @@
         @method('DELETE')
         <div class="form-group">
             <div id="checklist">
-                @foreach (\App\Models\formateurs::all() as $formateur)
-                    <input value="{{ $formateur->id }}" name="formateur_ids[]" type="checkbox" id="{{ $formateur->id }}">
-                    <label class="label" for="{{ $formateur->id }}">{{ $formateur->nom }}
-                        {{ $formateur->prenom }}</label>
-                @endforeach
-
+                {{-- @foreach (\App\Models\formateurs::all() as $formateur) --}}
+                    {{-- <input value="{{ $formateur->id }}" name="formateur_ids[]" type="checkbox" id="{{ $formateur->id }}"> --}}
+                    {{-- <label class="label" for="{{ $formateur->id }}">{{ $formateur->nom }} --}}
+                        {{-- {{ $formateur->prenom }}</label> --}}
+                {{-- @endforeach --}}
             </div>
         </div>
 

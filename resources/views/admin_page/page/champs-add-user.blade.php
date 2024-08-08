@@ -9,7 +9,7 @@
         </div>
     @endif
 
-    <form action="{{route('add.formateur')}}" method="POST">
+    <form action="{{route('add.user')}}" method="POST">
         @csrf
         <div class="form-group">
             {{-- <i class="fas fa-user icons"></i> --}}
@@ -33,6 +33,12 @@
             {{-- <i class="fas fa-envelope icons"></i> --}}
             <input type="email" id="email" name="email" class="form-control" placeholder="Email" required
                 value="{{ old('email') }}">
+        </div>
+
+        <div class="form-group">
+            {{-- <i class="fas fa-user icons"></i> --}}
+            <input type="text" id="follow_cours" name="follow_cours" class="form-control" placeholder="Nom de l'utilisateur" required
+                value="{{ old('nom') }}">
         </div>
 
         <div class="form-group">

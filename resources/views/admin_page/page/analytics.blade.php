@@ -3,13 +3,18 @@
 @section('title', 'Analytique')
 
 @section('contents')
+    @php
+        $nbr_cours = App\Models\Cours::count();
+        $nbr_users = App\Models\users::count();
+        $nbr_formateurs = App\Models\formateurs::count();
+    @endphp
     <h1>Analytique</h1>
     <div class="analyse">
         <div class="sales">
             <div class="status">
                 <div class="info">
-                    <h3>Ventes Totales</h3>
-                    <h1>65 024 $</h1>
+                    <h3>Nombres d'utilisateur</h3>
+                    <h1></h1>
                 </div>
                 <div class="progresss">
                     <svg>
@@ -57,27 +62,43 @@
 
     <div class="new-users">
         <h2>Nouveaux Utilisateurs</h2>
-        <div class="user-list">
-            <div class="user">
-                <img src="{{ asset('images/profile-2.jpg') }}">
-                <h2>Jack</h2>
-                <p>Il y a 54 minutes</p>
-            </div>
-            <div class="user">
-                <img src="{{ asset('images/profile-3.jpg') }}">
-                <h2>Amir</h2>
-                <p>Il y a 3 heures</p>
-            </div>
-            <div class="user">
-                <img src="{{ asset('images/profile-4.jpg') }}">
-                <h2>Ember</h2>
-                <p>Il y a 6 heures</p>
-            </div>
-            <div class="user">
-                <img src="{{ asset('images/plus.png') }}">
-                <h2>Plus</h2>
-                <p>Nouvel Utilisateur</p>
-            </div>
+        <div class="recent-orders">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Numéro</th>
+                        <th>Formation suivi</th>
+                        <th>Statut du payement</th>
+                        <th>Détails</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#">Voir Tout</a>
         </div>
     </div>
 
@@ -88,33 +109,28 @@
                 <tr>
                     <th>Nom du Client</th>
                     <th>Nom du Cours</th>
-                    <th>Numéro du Cours</th>
-                    <th>Paiement</th>
                     <th>Statut</th>
                     <th>Détails</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
+                    <td>username</td>
                     <td>Python pour les Nuls</td>
-                    <td>C001</td>
                     <td>$250</td>
                     <td>Payé</td>
                     <td><a href="#"><i class="fas fa-ellipsis"></i></a></td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>username</td>
                     <td>Java pour les Nuls</td>
-                    <td>C002</td>
                     <td>$350</td>
                     <td>En Attente</td>
                     <td><a href="#"><i class="fas fa-ellipsis"></i></a></td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>username</td>
                     <td>JavaScript pour les Nuls</td>
-                    <td>C003</td>
                     <td>$450</td>
                     <td>Payé</td>
                     <td><a href="#"><i class="fas fa-ellipsis"></i></a></td>

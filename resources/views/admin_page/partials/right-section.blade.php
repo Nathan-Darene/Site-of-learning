@@ -4,8 +4,8 @@
             <span class="material-icons-sharp icon-translate-no">menu</span>
         </button>
         <div class="dark-mode">
-            <span class="material-icons-sharp icon-translate-no active">light_mode</span>
-            <span class="material-icons-sharp icon-translate-no">dark_mode</span>
+            <span class="material-icons-sharp icon-translate-no active">dark_mode</span>
+            <span class="material-icons-sharp icon-translate-no ">light_mode</span>
         </div>
 
         <div class="profile">

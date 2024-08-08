@@ -25,8 +25,8 @@
     padding: 20px;
     border: 1px solid #888;
     border-radius: 20px;
-    width: 80%;
-    max-width: 800px; /* Limitez la largeur pour une meilleure lisibilité */
+    width: 100%;
+    max-width: 1000px; /* Limitez la largeur pour une meilleure lisibilité */
     position: relative; /* Position relative pour le bouton de fermeture absolue*/
 }
 
