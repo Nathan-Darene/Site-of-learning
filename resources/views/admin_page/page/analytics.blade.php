@@ -4,10 +4,9 @@
 
 @section('contents')
     @php
-        $nbr_cours = App\Models\Cours::count();
-        $nbr_users = App\Models\users::count();
-        $nbr_formateurs = App\Models\formateurs::count();
+        $formateurs = App\Models\formateurs::all();
     @endphp
+
     <h1>
         <span>Centre de controle</span>
         <span class="logo-1">O</span>

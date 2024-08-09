@@ -2,7 +2,6 @@
     @php
         $nbr_cours = App\Models\Cours::count();
         $nbr_users = App\Models\users::count();
-        $nbr_formations = App\Models\formations::count();
         $nbr_formateur = App\Models\formateurs::count();
     @endphp
     <div class="toggle">
@@ -38,9 +37,9 @@
             <span class="material-icons-sharp icon-translate-no">insights</span>
             <h3>Analytics</h3>
         </a>
-        <a href="#" id="sale-list">
+        <a href="#" id="formations">
             <span class="material-icons-sharp icon-translate-no">inventory</span>
-            <h3>Sale List</h3>
+            <h3>Formations</h3>
         </a>
         <a href="#" id="reports">
             <span class="material-icons-sharp icon-translate-no">report_gmailerrorred</span>

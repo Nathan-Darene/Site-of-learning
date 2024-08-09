@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    {{-- <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/fontawesome-6.5.1-beta3/css/all.min.css') }}"> --}}
-    <link rel="stylesheet" href="{{ asset('assets/fontawesome-free-6.5.1-web/css/all.min.css') }}">
+02    <link rel="stylesheet" href="{{ asset('assets/fontawesome-free-6.5.1-web/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/admin.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/modal_windows.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/add.css') }}">
@@ -34,6 +33,7 @@
     <script src="{{ asset('js/admin_page/active.js') }}"></script>
     <script src="{{ asset('js/admin_page/modal_window.js') }}"></script>
     <script src="{{ asset('js/admin_page/no-translate.js') }}"></script>
+    <script src="{{ asset('js/admin_page/show.js') }}"></script>
 </body>
 
 </html>

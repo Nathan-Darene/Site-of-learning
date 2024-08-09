@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { trigger: "users", modal: "modal-users" },
         { trigger: "formateur", modal: "modal-trainer" },
         { trigger: "history", modal: "modal-history" },
-        { trigger: "sale-list", modal: "modal-sale-list" },
+        { trigger: "formations", modal: "modal-formations" },
         { trigger: "reports", modal: "modal-reports" },
         { trigger: "settings", modal: "modal-settings" },
         // { trigger: "", modal: "" }

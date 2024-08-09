@@ -15,8 +15,8 @@
 @include('admin_page.partials.sidebar.sidebar-modal-users')
 @include('admin_page.partials.sidebar.sidebar-modal-trainer')
 @include('admin_page.partials.sidebar.sidebar-modal-users')
-@include('admin_page.partials.sidebar.sidebar-modal-sale-list')
-
+@include('admin_page.partials.sidebar.sidebar-modal-settings')
+@include('admin_page.partials.sidebar.sidebar-modal-formations')
 
 {{-- Right-section --}}
 @include('admin_page.partials.right-section')

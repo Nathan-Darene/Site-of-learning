@@ -48,3 +48,5 @@ Route::get('/formateurs/delete', [DeleteController::class, 'index'])->name('form
 Route::delete('/formateur/delete', [DeleteController::class, 'deleteFormateur'])->name('delete.formateur');
 
 
+//
+Route::get('/form', [AddController::class, 'showForm'])->name('form.show');

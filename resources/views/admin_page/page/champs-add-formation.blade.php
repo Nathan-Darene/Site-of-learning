@@ -50,7 +50,7 @@
         <div class="form-group">
             <label for="id_formateur" class="id_formateur">Formateur:</label>
             <select id="id_formateur" name="id_formateur" class="form-control" required>
-                @foreach (\App\Models\formateurs::all() as $formateur)
+                @foreach ($formateurs as $formateur)
                     <option value="{{ $formateur->id }}">{{ $formateur->nom }} {{ $formateur->prenom }}</option>
                 @endforeach
             </select>

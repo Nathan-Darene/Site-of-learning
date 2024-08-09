@@ -1,4 +1,7 @@
 <div class="containers">
+    @php
+        $formations = App\Models\Cours::all();
+    @endphp
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -9,12 +12,12 @@
         </div>
     @endif
 
-    <form action="{{route('add.user')}}" method="POST">
+    <form action="{{ route('add.user') }}" method="POST">
         @csrf
         <div class="form-group">
             {{-- <i class="fas fa-user icons"></i> --}}
-            <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom de l'utilisateur" required
-                value="{{ old('nom') }}">
+            <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom de l'utilisateur"
+                required value="{{ old('nom') }}">
         </div>
 
         <div class="form-group">
@@ -36,15 +39,18 @@
         </div>
 
         <div class="form-group">
-            {{-- <i class="fas fa-user icons"></i> --}}
-            <input type="text" id="follow_cours" name="follow_cours" class="form-control" placeholder="Nom de l'utilisateur" required
-                value="{{ old('nom') }}">
+            <label for="id_formation" class="id_formation">Formations:</label>
+            <select id="id_formation" name="id_formation" class="form-control" required>
+                @foreach ($formations as $formation)
+                    <option value="{{ $formation->id }}">{{ $formation->titre }}</option>
+                @endforeach
+            </select>
         </div>
 
         <div class="form-group">
             {{-- <i class="fas fa-lock icons"></i> --}}
-            <input type="password" id="mot_de_passe" name="mot_de_passe" class="form-control"
-                placeholder="Mot de passe" required>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" class="form-control" placeholder="Mot de passe"
+                required>
         </div>
 
         <center>

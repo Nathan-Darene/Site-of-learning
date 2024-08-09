@@ -18,6 +18,7 @@ class users extends Model
         'email',
         'prenom',
         'telephone',
+        'id_formation',
         'mot_de_passe',
     ];
 

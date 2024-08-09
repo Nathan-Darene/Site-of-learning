@@ -66,6 +66,7 @@ class AddController extends Controller
             'prenom' => 'required|string|max:255',
             'telephone' => 'required|string|max:20',
             'email' => 'required|string|email|max:255|unique:users,email',
+            'id_formation' => 'required|string|max:255',
             'mot_de_passe' => 'required|string|min:6',
         ]);
 
@@ -78,6 +79,18 @@ class AddController extends Controller
         // Redirection
         return redirect()->back()->with('success', 'Utilisateur ajouté avec succès!');
     }
+
+    // public function showForm()
+    // {
+    //     // Exemple d'options - elles pourraient être récupérées depuis une base de données
+    //     $options = collect([
+    //         (object) ['id' => 1, 'name' => 'Option 1'],
+    //         (object) ['id' => 2, 'name' => 'Option 2'],
+    //         (object) ['id' => 3, 'name' => 'Option 3'],
+    //     ]);
+
+    //     return view('admin_page.page.champs-add-user', compact('options'));
+    // }
 
 
 
