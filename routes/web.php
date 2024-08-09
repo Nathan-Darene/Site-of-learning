@@ -29,6 +29,7 @@ Route::get('page_admin', function () {
 });
 
 
+
 // Route pour l'ajout de formation
 Route::post('/formation', [AddController::class, 'store'])->name('formations.store');
 

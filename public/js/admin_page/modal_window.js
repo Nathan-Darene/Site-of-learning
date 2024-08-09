@@ -29,7 +29,19 @@ document.addEventListener("DOMContentLoaded", function() {
         { trigger: "users-add", modal: "add-users" },
         { trigger: "formateur-delete", modal: "del-formateur" },
         { trigger: "formation-delete", modal: "del-formation" },
-        { trigger: "users-delete", modal: "del-users" }
+        { trigger: "users-delete", modal: "del-users" },
+
+        // modal pour les sidebar
+        { trigger: "analytics", modal: "modal-analytics" },
+        { trigger: "users", modal: "modal-users" },
+        { trigger: "formateur", modal: "modal-trainer" },
+        { trigger: "history", modal: "modal-history" },
+        { trigger: "sale-list", modal: "modal-sale-list" },
+        { trigger: "reports", modal: "modal-reports" },
+        { trigger: "settings", modal: "modal-settings" },
+        // { trigger: "", modal: "" }
+
+
     ];
 
     // Initialiser les modales

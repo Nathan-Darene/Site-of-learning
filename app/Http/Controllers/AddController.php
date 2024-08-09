@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\cours;
+use App\Models\Cours;
 use App\Models\users;
 use App\Models\formateurs;
 use Illuminate\Http\Request;
@@ -29,7 +29,7 @@ class AddController extends Controller
         ]);
 
         // Enregistrement des données
-        cours::create($validatedData);
+        Cours::create($validatedData);
 
         // Redirection
         return redirect()->back()->with('success', 'Formation ajoutée avec succès!');

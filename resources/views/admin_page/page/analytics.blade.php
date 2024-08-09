@@ -8,7 +8,12 @@
         $nbr_users = App\Models\users::count();
         $nbr_formateurs = App\Models\formateurs::count();
     @endphp
-    <h1>Analytique</h1>
+    <h1>
+        <span>Centre de controle</span>
+        <span class="logo-1">O</span>
+        <span class="logo-2">RAL</span>
+
+    </h1>
     <div class="analyse">
         <div class="sales">
             <div class="status">
@@ -29,7 +34,7 @@
         <div class="visits">
             <div class="status">
                 <div class="info">
-                    <h3>Visites du Site</h3>
+                    <h3>Formations réalisées</h3>
                     <h1>24 981</h1>
                 </div>
                 <div class="progresss">
@@ -45,7 +50,7 @@
         <div class="searches">
             <div class="status">
                 <div class="info">
-                    <h3>Recherches</h3>
+                    <h3>Taux de participation</h3>
                     <h1>14 147</h1>
                 </div>
                 <div class="progresss">
@@ -61,7 +66,7 @@
     </div>
 
     <div class="new-users">
-        <h2>Nouveaux Utilisateurs</h2>
+        <h2>Utilisateurs</h2>
         <div class="recent-orders">
 
             <table>
@@ -69,7 +74,6 @@
                     <tr>
                         <th>Nom</th>
                         <th>Prénom</th>
-                        <th>Numéro</th>
                         <th>Formation suivi</th>
                         <th>Statut du payement</th>
                         <th>Détails</th>
@@ -83,11 +87,9 @@
                         <td>1</td>
                         <td>1</td>
                         <td>1</td>
-                        <td>1</td>
                     </tr>
 
                     <tr>
-                        <td>1</td>
                         <td>1</td>
                         <td>1</td>
                         <td>1</td>
@@ -103,7 +105,7 @@
     </div>
 
     <div class="recent-orders">
-        <h2>Commandes Récentes</h2>
+        <h2>Formations en cours</h2>
         <table>
             <thead>
                 <tr>

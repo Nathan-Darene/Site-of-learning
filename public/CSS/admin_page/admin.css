@@ -23,6 +23,13 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
+@font-face {
+    font-family: 'PoliceOral';
+    src: url('Fonts.azonix.Azonix.otf') format('opentype'),
+}
+
+
+
 .dark-mode-variables{
     --color-background: #181a1e;
     --color-white: #202528;
@@ -122,6 +129,10 @@ b{
     grid-template-columns: 12rem auto 23rem;
 }
 
+.logo-1,
+.logo-2{
+        font-family: 'PoliceOral', sans-serif;
+}
 aside{
     height: 100vh;
 }
