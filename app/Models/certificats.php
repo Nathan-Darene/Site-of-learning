@@ -16,14 +16,14 @@ class certificats extends Model
     ];
 
     // Relation: un certificat appartient à un utilisateur
-    public function user()
+    public function users()
     {
-        return $this->belongsTo(User::class, 'id_utilisateur');
+        return $this->belongsTo(users::class, 'id_utilisateur');
     }
 
     // Relation: un certificat est lié à un cours
     public function course()
     {
-        return $this->belongsTo(Courses::class, 'id_cours');
+        return $this->belongsTo(Cours::class, 'id_cours');
     }
 }

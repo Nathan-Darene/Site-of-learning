@@ -1,6 +1,6 @@
 {
     "commentTranslate.targetLanguage": "fr",
-    "commentTranslate.multiLineMerge": false,
+    "commentTranslate.multiLineMerge": true,
     "sqltools.connections": [
         {
             "previewLimit": 50,

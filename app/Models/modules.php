@@ -12,13 +12,13 @@ class modules extends Model
     protected $table = 'modules';
 
     protected $fillable = [
-        'titre', 'description', 'id_cours',
+        'titre', 'description', 'id_formation',
     ];
 
     // Relation: un module appartient à un cours
     public function course()
     {
-        return $this->belongsTo(Courses::class, 'id_cours');
+        return $this->belongsTo(Cours::class, 'id_formation');
     }
 
     // Relation: un module peut avoir plusieurs évaluations

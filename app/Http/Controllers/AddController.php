@@ -23,6 +23,7 @@ class AddController extends Controller
             'seance' => 'required|integer',
             'duree' => 'required|string|max:255',
             'lieu' => 'required|string|max:255',
+            'facture' => 'required|string|max:255',
             'date_debut' => 'required|date',
             'date_fin' => 'required|date',
             'id_formateur' => 'required|exists:formateurs,id'
@@ -70,6 +71,9 @@ class AddController extends Controller
             'mot_de_passe' => 'required|string|min:6',
         ]);
 
+         // Ajouter la valeur de la case à cocher
+        // $validatedData['solder'] = $request->has('checkbox') ? 1 : 0;
+
         // Hachage du mot de passe
         $validatedData['mot_de_passe'] = Hash::make($validatedData['mot_de_passe']);
 
@@ -80,17 +84,7 @@ class AddController extends Controller
         return redirect()->back()->with('success', 'Utilisateur ajouté avec succès!');
     }
 
-    // public function showForm()
-    // {
-    //     // Exemple d'options - elles pourraient être récupérées depuis une base de données
-    //     $options = collect([
-    //         (object) ['id' => 1, 'name' => 'Option 1'],
-    //         (object) ['id' => 2, 'name' => 'Option 2'],
-    //         (object) ['id' => 3, 'name' => 'Option 3'],
-    //     ]);
-
-    //     return view('admin_page.page.champs-add-user', compact('options'));
-    // }
+    
 
 
 

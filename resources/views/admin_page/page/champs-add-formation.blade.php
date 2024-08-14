@@ -38,6 +38,10 @@
         </div>
 
         <div class="form-group">
+            <input type="text" id="facture" name="facture" class="form-control" placeholder="Côut de la formation" required>
+        </div >
+
+        <div class="form-group">
             <center><label for="date_debut" class="date_debut">Date de début de la formation</label></center>
             <input type="date" id="date_debut" name="date_debut" class="form-control" required>
         </div>
@@ -55,6 +59,8 @@
                 @endforeach
             </select>
         </div>
+
+
 
         <center>
             <button type="submit" class="Download-button">

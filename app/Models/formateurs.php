@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class formateurs extends Model
+class Formateurs extends Model
 {
     use HasFactory;
 
@@ -27,6 +27,6 @@ class formateurs extends Model
     // Relation: un formateur peut avoir plusieurs cours
     public function courses()
     {
-        return $this->hasMany(Courses::class, 'id_formateur');
+        return $this->hasMany(Cours::class, 'id_formateur');
     }
 }

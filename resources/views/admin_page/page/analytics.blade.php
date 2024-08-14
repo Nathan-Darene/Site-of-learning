@@ -5,6 +5,8 @@
 @section('contents')
     @php
         $formateurs = App\Models\formateurs::all();
+        $users = App\Models\users::with('Cours',)->get();
+
     @endphp
 
     <h1>
@@ -69,35 +71,35 @@
         <div class="recent-orders">
 
             <table>
+
                 <thead>
                     <tr>
                         <th>Nom</th>
                         <th>Prénom</th>
                         <th>Formation suivi</th>
-                        <th>Statut du payement</th>
-                        <th>Détails</th>
+                        <th>Téléphone</th>
+                        <th>Adresse Mail</th>
+                        <th>Nombre de seance de la formation</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td></td>
-
-                    </tr>
+                    @forelse ($users as $user)
+                        <tr>
+                            <td>{{ $user->nom }}</td>
+                            <td>{{ $user->prenom }}</td>
+                            <td>{{ $user->cours->titre ?? 'Non attribué' }}</td>
+                            <td>{{ $user->telephone }}</td>
+                            <td>{{ $user->email }}</td>
+                            <td>{{ $user->cours->seance ?? 'Non attribué' }} seances</td>
+                        </tr>
+                    @empty
+                        <tr>
+                            <td colspan="7">Aucun utilisateur trouvé</td>
+                        </tr>
+                    @endforelse
                 </tbody>
+
             </table>
             <a href="#">Voir Tout</a>
         </div>
@@ -107,34 +109,31 @@
         <h2>Formations en cours</h2>
         <table>
             <thead>
+
                 <tr>
                     <th>Nom du Client</th>
                     <th>Nom du Cours</th>
-                    <th>Statut</th>
-                    <th>Détails</th>
+                    <th>Formations</th>
+                    <th>Nom du formateur</th>
+                    <th>Côut</th>
+                    <th>status du paiements</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>username</td>
-                    <td>Python pour les Nuls</td>
-                    <td>$250</td>
-                    <td>Payé</td>
-                    <td><a href="#"><i class="fas fa-ellipsis"></i></a></td>
-                </tr>
-                <tr>
-                    <td>username</td>
-                    <td>Java pour les Nuls</td>
-                    <td>$350</td>
-                    <td>En Attente</td>
-                    <td><a href="#"><i class="fas fa-ellipsis"></i></a></td>
-                </tr>
-                <tr>
-                    <td>username</td>
-                    <td>JavaScript pour les Nuls</td>
-                    <td>$450</td>
-                    <td>Payé</td>
-                    <td><a href="#"><i class="fas fa-ellipsis"></i></a></td>
+                @forelse ($users as $user)
+                    <tr>
+                        <td>{{ $user->nom }}</td>
+                        <td>{{ $user->prenom }}</td>
+                        <td>{{ $user->cours->titre ?? 'Non attribué' }}</td>
+                        <td>{{ $user->cours->formateur->nom }} {{ $user->cours->formateur->prenom }}</td>
+                        <td>{{$user->cours->facture}}</td>
+                        <td>Payé</td>
+                    </tr>
+                @empty
+                    <tr>
+                        <td colspan="7">Aucun utilisateur trouvé</td>
+                    </tr>
+                @endforelse
             </tbody>
         </table>
         <a href="#">Voir Tout</a>

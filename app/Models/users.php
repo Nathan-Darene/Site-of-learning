@@ -19,6 +19,7 @@ class users extends Model
         'prenom',
         'telephone',
         'id_formation',
+        'solder',
         'mot_de_passe',
     ];
 
@@ -37,6 +38,11 @@ class users extends Model
     public function certificats()
     {
         return $this->hasMany(Certificats::class, 'id_utilisateur');
+    }
+
+    public function cours()
+    {
+        return $this->belongsTo(Cours::class, 'id_formation');
     }
 
 }

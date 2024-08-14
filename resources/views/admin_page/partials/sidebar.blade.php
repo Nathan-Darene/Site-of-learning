@@ -40,6 +40,7 @@
         <a href="#" id="formations">
             <span class="material-icons-sharp icon-translate-no">inventory</span>
             <h3>Formations</h3>
+            <span class="message-count">{{$nbr_cours}}</span>
         </a>
         <a href="#" id="reports">
             <span class="material-icons-sharp icon-translate-no">report_gmailerrorred</span>

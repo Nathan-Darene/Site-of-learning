@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/delete.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/checklist.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/background.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/admin_page/status.css') }}">
 
     <title>@yield('title', 'Responsive Dashboard')</title>
 </head>
