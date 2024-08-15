@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-02    <link rel="stylesheet" href="{{ asset('assets/fontawesome-free-6.5.1-web/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fontawesome-free-6.5.1-web/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/admin.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/modal_windows.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/add.css') }}">

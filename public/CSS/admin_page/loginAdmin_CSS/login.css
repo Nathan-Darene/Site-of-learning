@@ -1,0 +1,41 @@
+body{
+    margin-top: 10%;
+}
+
+
+.formulaire {
+    margin-top: 200px;
+    background-color: #ffffff;
+    color: black;
+    margin: auto;
+    padding: 20px;
+    /* border: 2px solid #3c8ce7; */
+    border-radius: 10px;
+    height: 100%;
+    max-height: 1000;
+    width: 100%;
+    max-width: 500px; /* Limitez la largeur pour une meilleure lisibilité */
+    position: relative; /* Position relative pour le bouton de fermeture absolue*/
+}
+
+.logo{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    height: 200px;
+    width: 350px;
+}
+
+.text-logo{
+    font-weight: 600;
+    font-size: ;
+}
+
+.logo-text-1{
+    margin-top: 100px;
+    color: #fa2651;
+}

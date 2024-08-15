@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AddController;
 use App\Http\Controllers\DeleteController;
+use App\Http\Controllers\LoginController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -50,3 +52,17 @@ Route::delete('/formateur/delete', [DeleteController::class, 'deleteFormateur'])
 
 //
 Route::get('/form', [AddController::class, 'showForm'])->name('form.show');
+
+// Route Login users
+
+Route::get('formulaire', function () {
+    return view('admin_page/loginAdmin/formulaire');
+});
+
+Route::post('/login/admin', [LoginController::class, 'loginAdmin'])->name('login.admin');
+
+Route::post('/login/user', [LoginController::class, 'loginUser'])->name('login.admin');
+
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+
