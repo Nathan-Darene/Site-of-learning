@@ -21,15 +21,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('user_page', function () {
-    return view('users_page.page.content');
-});
+Route::get('/user_page', [AddController::class, 'showUserpage'])->name('userpage');
 
+// Route::get('page_admin', function () {
+//     return view('admin_page.page.analytics');
+// });
 
-Route::get('page_admin', function () {
-    return view('admin_page.page.analytics');
-});
-
+Route::get('/page_admin', [AddController::class, 'showadmin'])->name('showadmin');
 
 
 // Route pour l'ajout de formation
@@ -55,13 +53,20 @@ Route::get('/form', [AddController::class, 'showForm'])->name('form.show');
 
 // Route Login users
 
-Route::get('formulaire', function () {
-    return view('admin_page/loginAdmin/formulaire');
-});
+// Route::get('formulaire', function () {
+//     return view('admin_page/loginAdmin/formulaire');
+// });
+
+Route::get('/formulaires', [LoginController::class, 'showform'])->name('showform');
 
 Route::post('/login/admin', [LoginController::class, 'loginAdmin'])->name('login.admin');
 
-Route::post('/login/user', [LoginController::class, 'loginUser'])->name('login.admin');
+Route::get('/login/admin', [LoginController::class, 'showAnalytics'])->name('login.admins');
+
+// Route Login users
+Route::get('/login', [LoginController::class, 'showformuser'])->name('showformuser');
+
+Route::post('/login/user', [LoginController::class, 'loginUser'])->name('login.user');
 
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 

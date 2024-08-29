@@ -71,7 +71,6 @@
         <div class="recent-orders">
 
             <table>
-
                 <thead>
                     <tr>
                         <th>Nom</th>

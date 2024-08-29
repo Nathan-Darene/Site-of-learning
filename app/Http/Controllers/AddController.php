@@ -12,6 +12,15 @@ use Illuminate\Support\Facades\Hash;
 class AddController extends Controller
 {
 
+    public function showadmin(){
+        return view('admin_page.page.analytics');
+    }
+
+
+    public function showUserpage(){
+        return view('users_page.page.content');
+    }
+
     // Ajout d'une formation
     public function store(Request $request)
     {
@@ -84,7 +93,7 @@ class AddController extends Controller
         return redirect()->back()->with('success', 'Utilisateur ajouté avec succès!');
     }
 
-    
+
 
 
 

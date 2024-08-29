@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('CSS/users_page/Formation.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/users_page/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/users_page/boxicons.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('CSS/users_page/progres.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/users_page/search.css') }}">
 
     <title>@yield('title')</title>
 </head>
@@ -34,6 +34,7 @@
     <script src="{{ asset('js/user_page/date.js') }}"></script>
     <script src="{{ asset('js/user_page/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('js/user_page/chart.js') }}"></script>
+    <script src="{{ asset('js/user_page/search.js') }}"></script>
 </body>
 
 </html>

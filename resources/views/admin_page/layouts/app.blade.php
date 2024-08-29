@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/fontawesome-free-6.5.1-web/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('CSS/admin_page/admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/admin_page/analytic-center.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/modal_windows.css') }}">
-    <link rel="stylesheet" href="{{ asset('CSS/admin_page/add.css') }}">
-    <link rel="stylesheet" href="{{ asset('CSS/admin_page/delete.css') }}">
-    <link rel="stylesheet" href="{{ asset('CSS/admin_page/checklist.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/background.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/admin_page/checklist.css') }}">
     <link rel="stylesheet" href="{{ asset('CSS/admin_page/status.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/admin_page/delete.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/admin_page/admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/admin_page/add.css') }}">
 
     <title>@yield('title', 'Responsive Dashboard')</title>
 </head>

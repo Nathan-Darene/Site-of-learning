@@ -29,27 +29,27 @@
             <h3>Formateur</h3>
             <span class="message-count">{{$nbr_formateur}}</span>
         </a>
-        <a href="#" id="history">
+        {{-- <a href="#" id="history">
             <span class="material-icons-sharp icon-translate-no">receipt_long</span>
             <h3>History</h3>
-        </a>
-        <a href="#" id="analytics">
+        </a> --}}
+        {{-- <a href="#" id="analytics">
             <span class="material-icons-sharp icon-translate-no">insights</span>
             <h3>Analytics</h3>
-        </a>
+        </a> --}}
         <a href="#" id="formations">
             <span class="material-icons-sharp icon-translate-no">inventory</span>
             <h3>Formations</h3>
             <span class="message-count">{{$nbr_cours}}</span>
         </a>
-        <a href="#" id="reports">
+        {{-- <a href="#" id="reports">
             <span class="material-icons-sharp icon-translate-no">report_gmailerrorred</span>
             <h3>Reports</h3>
-        </a>
-        <a href="#" id="settings">
+        </a> --}}
+        {{-- <a href="#" id="settings">
             <span class="material-icons-sharp icon-translate-no">settings</span>
             <h3>Settings</h3>
-        </a>
+        </a> --}}
         <a href="#">
             <span class="material-icons-sharp icon-translate-no">logout</span>
             <h3>Logout</h3>

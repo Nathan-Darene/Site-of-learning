@@ -14,14 +14,18 @@
         </thead>
 
         <tbody>
-            @foreach ($users as $user )
+            @forelse ($users as $user )
                 <tr>
-                    <td>{{$fuser->nom}}</td>
-                    <td>{{$fuser->prenom }}</td>
-                    <td>{{$fuser->telephone}}</td>
-                    <td>{{$fuser->email}}</td>
+                    <td>{{$user->nom}}</td>
+                    <td>{{$user->prenom }}</td>
+                    <td>{{$user->telephone}}</td>
+                    <td>{{$user->email}}</td>
                 </tr>
-            @endforeach
+            @empty
+                <tr>
+                    <td colspan="7">Aucun utilisateur trouvé</td>
+                </tr>
+            @endforelse
         </tbody>
     </table>
 </div>

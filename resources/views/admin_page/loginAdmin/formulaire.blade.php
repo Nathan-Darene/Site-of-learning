@@ -7,7 +7,10 @@
         <div class="logo">
             {{-- <img src="images/assets/logo_oral.png" alt=""> --}}
             <span class="text-logo">
-                <span class="logo-text-1">CONNEXION </span>
+                <span class="logo-text">
+                    <i class="fas fa-user-graduate"></i>
+                    <p class="logo-text-1">CONNEXION ADMIN</p>
+                </span>
             </span>
         </div>
         <form action="{{ route('login.admin') }}" method="POST">
@@ -15,18 +18,24 @@
 
             <div class="form-group">
                 {{-- <i class="fas fa-envelope icons"></i> --}}
-            032<input type="email" id="email" name="email" class="form-control" placeholder="Email" required
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required
                     value="{{ old('email') }}">
+                @error('email')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">
-                <input type="password" id="mot_de_passe" name="mot_de_passe" class="form-control" placeholder="Mot de passe"
+                <input type="password" id="password" name="password" class="form-control" placeholder="Mot de passe"
                     required>
+                @error('password')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
             </div>
 
-            <center>
+            <center class="btn-1">
                 <button type="submit" class="Download-button">
-                    <span>Se connecter</span>
+                    <span class="btn">Se connecter</span>
                 </button>
             </center>
         </form>

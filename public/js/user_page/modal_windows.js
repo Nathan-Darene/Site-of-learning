@@ -24,22 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Liste des déclencheurs et des modales correspondantes
     const modals = [
-        { trigger: "formateur-add", modal: "add-formateur" },
-        { trigger: "formation-add", modal: "add-formation" },
-        { trigger: "users-add", modal: "add-users" },
-        { trigger: "formateur-delete", modal: "del-formateur" },
-        { trigger: "formation-delete", modal: "del-formation" },
-        { trigger: "users-delete", modal: "del-users" },
 
-        // modal pour les sidebar
-        // { trigger: "analytics", modal: "modal-analytics" },
-        { trigger: "users", modal: "modal-users" },
-        { trigger: "formateur", modal: "modal-trainer" },
-        // { trigger: "history", modal: "modal-history" },
-        { trigger: "formations", modal: "modal-formations" },
-        // { trigger: "reports", modal: "modal-reports" },
-        // { trigger: "settings", modal: "modal-settings" },
-        // { trigger: "", modal: "" }
+        { trigger: "", modal: "" },
+        { trigger: "", modal: "" },
+        { trigger: "", modal: "" }
 
 
     ];

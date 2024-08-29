@@ -82,13 +82,33 @@ body{
     cursor: pointer;
 }
 
-.top-container .nav .right-section .profile{
+@keyframes heartbeat {
+    0% {
+        box-shadow: 0px 0px 0px 7px rgba(112, 236, 74, 0.2);
+    }
+    30% {
+        box-shadow: 0px 0px 0px 14px rgba(112, 236, 74, 0.1);
+    }
+    60% {
+        box-shadow: 0px 0px 0px 7px rgba(112, 236, 74, 0.2);
+    }
+    100% {
+        box-shadow: 0px 0px 0px 7px rgba(112, 236, 74, 0.2);
+    }
+}
+
+.top-container .nav .right-section .profile {
     display: flex;
     align-items: center;
     background: #1e293b;
+    width: 120px;
     padding: 0 10px;
     border-radius: 50px;
     gap: 10px;
+    margin-left: 10px;
+    justify-content: flex-end;
+    border: 2px solid #35db02;
+    animation: heartbeat 1.5s infinite;
 }
 
 .top-container .nav .right-section .profile .info{
@@ -97,11 +117,11 @@ body{
     gap: 10px;
 }
 
-.top-container .nav .right-section .profile .info img{
-    width: 32px;
-    height: 32px;
+.top-container .nav .right-section .profile .en-ligne{
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    border: 1px solid #f1f3f2;
+    border: 1px solid #35db02;
 }
 
 .top-container .nav .right-section .profile .info a{

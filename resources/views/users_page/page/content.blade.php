@@ -13,58 +13,24 @@
         </div>
 
         <div class="items-list">
-            <div class="item">
-                <div class="info">
-                    <div>
-                        <h5>Data Analysis</h5>
-                        <p>- Il reste 3 cours</p>
-                        <p>- 1 project left</p>
+            @forelse ($formations as $formation)
+                <div class="item">
+                    <div class="info">
+                        <div>
+                            <h5>{{$formation->titre ?? 'Non attribué' }}</h5>
+                        </div>
+                        <i class='fa-solid fa-award'></i>
                     </div>
-                    <i class='fa-solid fa-award'></i>
-                </div>
-                <div class="progress">
-                    <div class="bar"></div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="info">
-                    <div>
-                        <h5>Machine Learn</h5>
-                        <p>- Il reste 2 missions</p>
-                        <p>- Il reste 5 tutoriels</p>
+                    <div class="progress">
+                        <div class="bar"></div>
                     </div>
-                    <i class='fa-solid fa-award'></i>
+                    
                 </div>
-                <div class="progress">
-                    <div class="bar"></div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="info">
-                    <div>
-                        <h5>Python</h5>
-                        <p>- Il reste 4 chapitres</p>
-                        <p>- Il reste 8 quiz </p>
-                    </div>
-                    <i class='fa-solid fa-award'></i>
-                </div>
-                <div class="progress">
-                    <div class="bar"></div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="info">
-                    <div>
-                        <h5>Python</h5>
-                        <p>- Il reste 4 chapitres</p>
-                        <p>- Il reste 8 quiz </p>
-                    </div>
-                    <i class='fa-solid fa-award'></i>
-                </div>
-                <div class="progress">
-                    <div class="bar"></div>
-                </div>
-            </div>
+            @empty
+                <tr>
+                    <td colspan="7">Aucune formation trouvé</td>
+                </tr>
+            @endforelse
         </div>
     </div>
 
@@ -92,7 +58,7 @@
                     </div>
                     <div>
                         <p>Terminé ?</p>
-                        <input type="checkbox" class="ui-checkbox">                        <i class='bx bx-dots-horizontal-rounded'></i>
+                        <input type="checkbox" class="ui-checkbox"> <i class='bx bx-dots-horizontal-rounded'></i>
                     </div>
                 </div>
             </div>

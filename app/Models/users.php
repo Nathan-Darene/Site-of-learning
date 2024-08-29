@@ -19,7 +19,7 @@ class users extends Model
         'prenom',
         'telephone',
         'id_formation',
-        'solder',
+        // 'solder',
         'mot_de_passe',
     ];
 
@@ -42,7 +42,7 @@ class users extends Model
 
     public function cours()
     {
-        return $this->belongsTo(Cours::class, 'id_formation');
+        return $this->belongsTo(Cours::class, 'id_formation',);
     }
 
 }

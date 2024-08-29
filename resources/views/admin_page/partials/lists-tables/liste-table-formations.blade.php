@@ -14,14 +14,18 @@
         </thead>
 
         <tbody>
-            @foreach ($formations as $formation )
+            @forelse ($formations as $formation )
                 <tr>
                     <td>{{$formation->titre}}</td>
                     <td>{{$formation->seance}}</td>
                     <td class="">{{$formation->duree}}</td>
                     <td>{{$formation->lieu}}</td>
                 </tr>
-            @endforeach
+            @empty
+                <tr>
+                    <td colspan="7">Aucune formation trouvé</td>
+                </tr>
+            @endforelse
         </tbody>
     </table>
 </div>
